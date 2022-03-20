@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML5 Custom Attributes</title>
+    </head>
+    <body>
+        <h1>HTML5 CUSTOM ATTRIBUTES</h1>
+
+        <div id="target" ng-app="myTestApp">
+            <section>Section 1
+                <article>Article 1</article>
+            </section>
+        </div>
+        <script>
+            // var element = document.getElementById("target");
+            // console.log(element);
+            // console.log(element.getAttribute("ng-app")); 
+
+            // This is the basic idea for how angular JS binds our models to the view! It is really making 
+            // use of custom attributes under the hood called ng-app and ng-controller, performing query selections, 
+            // and then getting those attrib values in order to connect them to our model! 
+
+            // find me the first element with the attribute ng-app
+            var elem2 = document.querySelector("[ng-app]")
+            console.log(elem2);
+            console.log(elem2.getAttribute("ng-app"));
+        </script>
+    </body>
+</html>
