@@ -122,4 +122,3 @@ using the MVVM pattern, can mesh it with other design patterns as well!
 1. The view model reaches out to the model for some data
 2. The model returns that data to the view model
 3. The view model binds this data to certain components inside the view, via angularJS: happens declaratively, no js code needed to manipulate the view, the framework handles this for us! 
-
