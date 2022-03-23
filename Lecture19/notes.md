@@ -35,7 +35,7 @@ Behind the scenes, the controller as syntax does something like this:
 > $scope2.ctrl2 = new Controller2();
 > ...
 
-So, through controller as syntax, we are able to easily create instances of our controllers on the scope, which in turn allows us to easily update values in each controller without worrying about those changes having unwanted affects in other controllers, because through the controller instances on the scope, such data is no longer shared! Without controller as syntax, child controllers would still inherit the scope of the parent controller, and thereby risk masking non primitive type data members that causes unwanted affects in the parent controller! So this makes things less error prone!
+So, through controller as syntax, we are able to easily create instances of our controllers on the scope, which in turn allows us to easily update values in each controller without worrying about those changes having unwanted affects in other controllers, because through the controller instances on the scope, such data is no longer shared (it is no longer masked)! Without controller as syntax, child controllers would still inherit the scope of the parent controller, and thereby risk masking non primitive type data members that causes unwanted affects in the parent controller! So this makes things less error prone!
 
 This also makes debugging easier because now we know which properties belong to which controller!
 

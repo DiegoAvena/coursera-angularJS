@@ -100,7 +100,7 @@ using the MVVM pattern, can mesh it with other design patterns as well!
 - The representaton of the state of the view,
 - "The model that is the data that represents the view", it is the subset model that deals with the view representation
 - Holds the data that is displayed in the view
-- AKA: __Presentation logic__, it is the JS code we write for managing the way a view displays our model
+- AKA: __Presentation logic__, it is the JS code we write for managing the way a view displays our model: we call it the CONTROLLER
 - Responds to view events: called __Presentation Logic__ 
 - Calls other functionality for business logic processing
 > NEVER ASKS THE VIEW TO DISPLAY ANYTHING: DOES NOT DIRECTLY MANIPULATE THE DOM, 
