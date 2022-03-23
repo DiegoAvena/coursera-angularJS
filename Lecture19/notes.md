@@ -35,6 +35,10 @@ Behind the scenes, the controller as syntax does something like this:
 > $scope2.ctrl2 = new Controller2();
 > ...
 
+So, through controller as syntax, we are able to easily create instances of our controllers on the scope, which in turn allows us to easily update values in each controller without worrying about those changes having unwanted affects in other controllers, because through the controller instances on the scope, such data is no longer shared! Without controller as syntax, child controllers would still inherit the scope of the parent controller, and thereby risk masking non primitive type data members that causes unwanted affects in the parent controller! So this makes things less error prone!
+
+This also makes debugging easier because now we know which properties belong to which controller!
+
 ## Scope Inheritance
 
 It is not good practice to have 1 angularJS controller handle everything on your page. Easier to code smaller pieces of functionality for different parts of your page (easier to debug this as well). This means that we will have to create nested controllers, where a main controller contains smaller controllers. Through scope inheritance, the scope of the outer controller gets inherited by the scope of the inner controllers, but AngularJS goes further to make this even better: 
@@ -64,6 +68,8 @@ IF we are dealing with a property that is not a primitive type, things get a bit
 > $scope2.obj.prop = "ctrl-2" 
 This makes us go up the prototype chain to obj on the parent, and so we change the prop of the obj on the parent to ctrl-2 so that then: 
 > $scope3.obj.prop? -> evaluates to ctrl-2
+
+This is something that we seek to fix through controller as syntax
 
 ## Prototypal Inheritance
 
