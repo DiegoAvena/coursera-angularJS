@@ -14,9 +14,9 @@ we are allowed to define custom filters. The workflow for doing so is this:
 > }
 > }
 
-This is an example of a design pattern called Factory Design. In this pattern, we use factories. A factory 
-is a part of our code that is responsible for instantiating new objects. In our case, the factory will 
-produce a custom filtering function.
+This is an example of a design pattern called __Factory Design Pattern__. In this pattern, we use factories. A factory 
+is a part of our code that is responsible for instantiating new objects. (See lecture 21 for more info). In our case, the factory will 
+produce a custom filtering function. 
 
 AngularJS expects us to create a factory which produces our custom filter functions.
 
