@@ -21,7 +21,7 @@ In terms of the service factory function itself, it looks something like this:
 >   return factory;
 > }
 
-Notice how we are the ones who call new: this gives us more controll over how the service is configured when it is instantiated. Another way to go about this is this way (factory is an object literal with a method called getSomeService that returns the service instance)
+Notice how we are the ones who call new: this gives us more control over how the service is configured when it is instantiated. Another way to go about this is this way (factory is an object literal with a method called getSomeService that returns the service instance)
 
 > function CustomService() {
 >   var factory = {
@@ -43,6 +43,8 @@ If using the function approach, using the service looks like this:
 
 > var someService = CustomService();
 > someService.method();
+
+Since factory functions leave it to us to create the service, then we can configure that service, and allow ourselves to have different services with different configurations
 
 ## Factory Design Pattern
 
