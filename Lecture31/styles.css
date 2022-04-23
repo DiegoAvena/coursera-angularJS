@@ -1,0 +1,16 @@
+body
+{
+    font-size: 1.2em;
+}
+
+#list1
+{
+    color:lightblue;
+}
+
+.error
+{
+    font-weight: bold;
+    color: red;
+    display: none;
+}

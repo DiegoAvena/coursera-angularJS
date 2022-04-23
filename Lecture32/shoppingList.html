@@ -1,0 +1,9 @@
+<h3>{{list.title}}</h3>
+<ol>
+    <li ng-repeat="item in list.items">
+        {{item.quantity}} of {{item.name}}
+        <button ng-click="list.onRemove({index: $index})">Remove Item</button>
+    </li>
+</ol>
+<!--The displaying of this is now done by our js code, via the directive link-->
+<div class="error" ng-transclude><!--When the {{}} get's evaluated in the parent now, it will be placed here--></div>

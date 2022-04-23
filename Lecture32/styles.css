@@ -1,0 +1,33 @@
+body
+{
+    font-size: 1.2em;
+}
+
+#list1, #list2
+{
+    float: left;
+}
+
+#list1 {
+    color:lightblue;
+}
+
+#list2 {
+    margin-left: 20px;
+    color: lightgreen;
+}
+
+.warning {
+    font-style: italic;
+}
+
+.title {
+    background-color: #383838;
+}
+
+.error
+{
+    font-weight: bold;
+    color: red;
+    display: none;
+}

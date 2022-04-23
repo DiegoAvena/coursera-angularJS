@@ -1,0 +1,11 @@
+<h3>{{list.title}}</h3>
+<ol>
+    <li ng-repeat="item in list.items">
+        {{item.quantity}} of {{item.name}}
+        <button ng-click="list.onRemove({index: $index})">Remove Item</button>
+    </li>
+</ol>
+<!--The displaying of this is now done by our js code, via the directive link-->
+<div class="error">
+    OH THE HORROR! COOKIES DETECTED!
+</div>
