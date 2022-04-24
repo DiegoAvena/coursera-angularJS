@@ -1,6 +1,6 @@
 ## Using directives transcludeto wrap other elements
 
-Sometimes we need to pass in an entire html template to our directive html template. Common use case is a dialog box, but such templates must also be generic enough to allow us to change their contents with ease.
+Sometimes we need to pass in an entire html template to our directive html template. Common use case is a dialog box: such templates must also be generic enough to allow us to change their contents with ease.
 
 Using transclude allows us to define this content. 
 
