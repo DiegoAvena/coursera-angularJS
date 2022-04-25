@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="ShoppingList">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>No Cookie Shopping List</title>
+    </head>
+    <body>
+        <h1>Welcome to Premade No Cookie Shopping List</h1>
+        
+        <div class="tabs">
+            <!--Options for switching from state to state-->
+            <!--ui-sref-active allows us to specify a css class to apply when that state is active-->
+            <button ui-sref="home" ui-sref-active="activeTab">Home</button>
+            <button ui-sref="mainList" ui-sref-active="activeTab">Main List</button>
+        </div>
+
+        <ui-view></ui-view>
+        <loading-spinner></loading-spinner>
+
+        <!--Libraries-->
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-ui-router.min.js"></script>
+
+        <!--Modules-->
+        <script src="src/spinner/spinner.module.js"></script>
+        <script src="src/shoppinglist/shoppinglist.module.js"></script>
+        
+        <!--Routes-->
+        <script src="src/routes.js"></script>
+
+        <!--Shopping List module artifacts-->
+        <script src="src/shoppinglist/main-shoppinglist.controller.js"></script>
+        <script src="src/shoppinglist/item-detail.controller.js"></script>
+        <script src="src/shoppinglist/shoppinglist.component.js"></script>
+        <script src="src/shoppinglist/shoppinglist.service.js"></script>
+        <script src="src/spinner/loadingspinner.component.js"></script>
+    </body>
+</html>
