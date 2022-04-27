@@ -31,7 +31,7 @@ You can also define the controller on the module itself as you normally would, a
 >       scope: {
 >           prop: '=',
 >       },
->       controller: 'ControllerFunction' as myCtrl, 
+>       controller: 'ControllerFunction as myCtrl', 
 >       bindToContoller: true,
 >       templateUrl: 'template.html'
 >   };
