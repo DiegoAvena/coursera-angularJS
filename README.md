@@ -1,5 +1,5 @@
 # coursera-angularJS
-Repo containing all coursera angular js tutorials.
+Repo containing all coursera angular js tutorials. All code in this repo comes from the various lectures in this video: https://www.youtube.com/watch?v=9b9pLgaSQuI
 
 # Some quick notes
 
